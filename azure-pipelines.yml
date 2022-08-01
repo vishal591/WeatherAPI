@@ -24,7 +24,7 @@ stages:
         containerRegistry: 'CICDTerraForm'
         repository: 'vishaldocker59/weatherapi'
         command: 'buildAndPush'        
-        Dockerfile: '**/Dockerfile'       
+        Dockerfile: '**/Dockerfile' 
         tags: |
           $(tag)
 
