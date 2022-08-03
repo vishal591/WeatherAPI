@@ -29,6 +29,6 @@ stages:
         containerRegistry: 'Docker hub Service'
         repository: 'vishaldocker59/weatherapi'
         command: 'buildAndPush'        
-        Dockerfile: '**/Dockerfile' 
+        Dockerfile: 'vishaldocker59/weatherapi' 
         tags: |
          $(tag)
