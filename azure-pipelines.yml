@@ -27,8 +27,8 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'Docker hub Service'
-        repository: 'vishaldocker59/weatherapi'
-        command: 'build'
-        Dockerfile: '/usr/local/sbin/Dockerfile'
+        repository: '$(Build.Repository.Name).api'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
         tags: |
          $(tag)
